@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashraf Rateb</title>
+  <meta name="description" content="Ashraf Rateb | Hydrology, geodesy, remote sensing, and climate science" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000000;
+      --fg: #f2f2f2;
+      --muted: #a3a3a3;
+      --subtle: #7a7a7a;
+      --line: #1a1a1a;
+      --max: 760px;
+      --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      --font-display: "Cormorant Garamond", Georgia, serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px solid #333333;
+      transition: opacity 0.2s ease, border-color 0.2s ease;
+    }
+    a:hover {
+      opacity: 0.85;
+      border-color: #6b6b6b;
+    }
+    .wrap {
+      max-width: var(--max);
+      margin-left: clamp(56px, 8vw, 128px);
+      margin-right: auto;
+      padding: 34px 24px 96px;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 18px;
+      margin-bottom: 48px;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+    }
+    nav a {
+      border-bottom: none;
+      color: var(--muted);
+    }
+    nav a:hover {
+      color: var(--fg);
+    }
+    .hero {
+      min-height: 18vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6px 0 20px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(3.2rem, 7vw, 6rem);
+      line-height: 0.94;
+      font-weight: 500;
+      letter-spacing: -0.05em;
+      font-family: var(--font-display);
+      color: var(--fg);
+    }
+    .role {
+      font-size: 0.88rem;
+      color: var(--subtle);
+      margin-bottom: 0;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    section {
+      padding: 48px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    #about {
+      padding-top: 34px;
+    }
+    h2 {
+      margin: 0 0 18px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--fg);
+    }
+    p {
+      margin: 0 0 16px;
+      font-size: 0.96rem;
+      line-height: 1.72;
+      color: var(--muted);
+      font-family: var(--font-body);
+    }
+    .item {
+      margin-bottom: 30px;
+    }
+    .item:last-child {
+      margin-bottom: 0;
+    }
+    .item-title {
+      margin-bottom: 8px;
+      font-size: 1.24rem;
+      color: var(--fg);
+      font-family: var(--font-display);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.12;
+    }
+    .item-meta {
+      margin-bottom: 10px;
+      color: var(--subtle);
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .icon-link svg {
+      width: 15px;
+      height: 15px;
+      display: block;
+      fill: currentColor;
+    }
+    #contact p, #contact a {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    footer {
+      padding: 30px 0 0;
+      color: var(--subtle);
+      font-size: 0.88rem;
+      letter-spacing: 0.03em;
+    }
+    @media (max-width: 640px) {
+      .wrap {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 28px 20px 88px;
+      }
+      nav {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 36px;
+      }
+      .hero {
+        min-height: auto;
+        padding: 2px 0 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research interests</a>
+      <a href="#work">Selected projects</a>
+      <a href="#pubs">Recent publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header class="hero">
+      <h1>Ashraf Rateb</h1>
+      <div class="role">Research Scientist, The University of Texas at Austin</div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I work at the intersection of hydrology, geodesy, climate science, and remote sensing. My research focuses on global hydrology, hydroclimate extremes, groundwater change, and the use of geodetic observations to better understand water and environmental variability.
+      </p>
+      <p>
+        I try to ask clear questions, use the best available observations and models, and be explicit about uncertainty. My work relies on probabilistic methods, nonlinear dynamics, and statistical inference to separate robust structure from noise and to make careful, testable conclusions.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research interests</h2>
+
+      <div class="item">
+        <div class="item-title">Global hydrology and storage dynamics</div>
+        <div class="item-meta">Water storage, variability, trend dynamics, drivers, long-range memory</div>
+        <p>
+          I study how water mass is redistributed across basins, regions, and continents, and how the statistical structure of that redistribution changes under climate variability, human influence, and environmental change. This includes long-range memory, nonstationarity, scaling behavior, and trend dynamics, with particular attention to identifying the drivers of observed change while separating genuine dynamics from artifacts introduced by observational aggregation and short records.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Hydroclimate extremes and regime transitions</div>
+        <div class="item-meta">Droughts, floods, transitions, persistence, predictability</div>
+        <p>
+          I study how droughts, floods, and transitions between wet and dry conditions develop across space and time, with emphasis on their persistence, severity, drivers, and predictability. A central question is how much of this behavior reflects identifiable structure in the climate and hydrologic system, and how much remains limited by internal variability, short records, and uncertainty in the observations themselves.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Groundwater systems and hydrogeodesy</div>
+        <div class="item-meta">Aquifers, subsurface change, deformation, ill-posed inversion</div>
+        <p>
+          I use GRACE and GRACE-FO, InSAR, and GNSS to investigate groundwater depletion and recovery, land subsidence and uplift, and the relation between subsurface storage change and surface deformation. Because these are ill-posed inverse problems, the work depends on physically informed regularization and careful treatment of heterogeneous errors and sampling across the different observing systems.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Attribution, teleconnections, and uncertainty</div>
+        <div class="item-meta">Causal inference, forced vs. internal variability, probabilistic frameworks</div>
+        <p>
+          I study how externally forced hydroclimate signals can be separated from internal climate variability, and how teleconnections shape regional hydroclimate variability, extremes, and impacts. The emphasis is on probabilistic frameworks that make structural, parametric, and observational uncertainty explicit rather than reducing complex behavior to a single estimate.
+        </p>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Selected projects</h2>
+
+      <div class="item">
+        <div class="item-title">Climate extremes in Texas and implications for water management</div>
+        <div class="item-meta">Texas hydroclimate, compound extremes, SMILE, SOM, Bayesian HMM</div>
+        <p>
+          This project examines historical and projected climate extremes across Texas using SMILEs to separate forced change from internal variability, Self-Organizing Maps to characterize circulation regimes, and Bayesian Hidden Markov Models to infer latent hydroclimate states and transition probabilities. The goal is to quantify uncertainty in forms that are directly relevant to reservoir operations and water-resources planning under nonstationarity.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Submonthly Gulf Coast sea level variability and flood impacts</div>
+        <div class="item-meta">Gulf Coast, non-tidal residuals, predictability decomposition, flood metrics</div>
+        <p>
+          This work develops hybrid statistical-dynamical frameworks to diagnose submonthly Gulf Coast sea-level variability, identify sources of predictability, and evaluate model error against CORA observations and CESM simulations. A central aim is to translate water-level anomalies into spatially explicit flood metrics, including duration, extent, and severity, while carrying uncertainty through the full analysis chain.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Integrated GNSS, InSAR, and GRACE for groundwater monitoring in Texas</div>
+        <div class="item-meta">Hydrogeodesy, multi-sensor fusion, storage-deformation coupling, uncertainty</div>
+        <p>
+          This project develops a constrained multi-sensor inversion that combines GNSS loading deformation, InSAR surface displacement, and GRACE terrestrial water storage to monitor groundwater change across Texas aquifer systems. Because each observing system has distinct errors and spatiotemporal sampling characteristics, the framework relies on physically informed regularization and explicit treatment of elastic and inelastic deformation to better constrain storage change from surface motion.
+        </p>
+      </div>
+    </section>
+
+    <section id="pubs">
+      <h2>Recent publications</h2>
+
+      <div class="item">
+        <div class="item-title"><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2025AV001684" target="_blank" rel="noopener noreferrer">Dynamics and Couplings of Terrestrial Water Storage Extremes From GRACE and GRACE-FO Missions During 2002–2024</a></div>
+        <div class="item-meta">AGU Advances, 2025</div>
+        <p>
+          Examines the global dynamics and spatial coupling of terrestrial water storage extremes during 2002–2024, with emphasis on how large-scale climate variability organizes drought and flood conditions across regions.
+        </p>
+      </div>
+      <div class="item">
+        <div class="item-title"><a href="https://iopscience.iop.org/article/10.1088/1748-9326/ae4d5f/meta" target="_blank" rel="noopener noreferrer">Hydrological and ecological consequences of the Kakhovka dam collapse</a></div>
+        <div class="item-meta">Environmental Research Letters, 2026</div>
+        <p>
+          Analyzes the hydrological and ecological impacts of the Kakhovka dam collapse using multi-sensor remote sensing and causal inference, with emphasis on water storage loss, river dynamics, flooding, and vegetation response.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ashraf.rateb@beg.utexas.edu">ashraf.rateb@beg.utexas.edu</a></p>
+      <p>For research collaborations or informal conversations, please feel free to reach out by email.</p>
+      <p><a class="icon-link" href="https://scholar.google.com/citations?user=IIX2YPkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile">Google Scholar</a></p>
+      <p><a class="icon-link" href="https://github.com/arateb" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a></p>
+      <p><a class="icon-link" href="https://orcid.org/0000-0002-8875-1508" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile">ORCID</a></p>
+      <p>Bureau of Economic Geology</p>
+      <p>Jackson School of Geosciences</p>
+      <p>The University of Texas at Austin</p>
+      <p>10100 Burnet Rd., Bldg. 130</p>
+      <p>Austin, TX 78758-4445</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Ashraf Rateb
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
